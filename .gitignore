@@ -1,0 +1,17 @@
+# Visual Studio / .NET
+bin/
+obj/
+.vs/
+*.user
+*.suo
+*.userprefs
+*.cache
+[Dd]ebug/
+[Rr]elease/
+x64/
+x86/
+TestResults/
+packages/
+*.nupkg
+.idea/
+.vscode/
