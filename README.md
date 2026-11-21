@@ -5,17 +5,17 @@ que pide los datos por teclado y deja elegir la operación.
 
 | Proyecto    | Funcionalidades |
 |-------------|-----------------|
-| `Array`     | máximo, mínimo, mediana, media, ordenar, desviación típica, binarizar |
-| `Numero`    | primo, factorial, segundos → h/min/s, serie de Pell (15), Armstrong, dígitos diferentes |
-| `Cadena`    | palíndromo, mayúsculas/minúsculas, ocurrencias de una letra, repetir dos strings, duplicar letras, borrar apariciones |
+| `Arrays`    | máximo, mínimo, mediana, media, ordenar, desviación típica, binarizar |
+| `Numeros`   | primo, factorial, segundos → h/min/s, serie de Pell (15), Armstrong, dígitos diferentes |
+| `Cadenas`   | palíndromo, mayúsculas/minúsculas, ocurrencias de una letra, repetir dos strings, duplicar letras, borrar apariciones |
 | `Decimales` | redondear al alza, quitar decimales, ecuación de segundo grado |
 
 ## Estructura esperada
 ```
 Anexo1.sln
-Array/        (proyecto de consola)
-Numero/
-Cadena/
+Arrays/       (proyecto de consola)
+Numeros/
+Cadenas/
 Decimales/
 ```
 
@@ -29,4 +29,4 @@ Decimales/
 - **Nunca** se desarrolla en `main`. Se trabaja en `feature/...` a partir de `develop`.
 - Todo entra por **Pull Request** a `develop`; el jefe revisa y fusiona.
 - Al final de cada sprint el jefe fusiona `develop` → `main`.
-- Ver la **Wiki** para el flujo completo y las tareas.
+- Ver la **Wiki** ([`wiki/Home.md`](wiki/Home.md)) para el flujo completo y las tareas.
