@@ -16,6 +16,7 @@ internal static class Program
             Console.WriteLine("5. Buscar un número");
             Console.WriteLine("6. Ordenar de menor a mayor");
             Console.WriteLine("7. Invertir el array");
+            Console.WriteLine("8. Calcular la mediana");
             Console.WriteLine("0. Salir");
             Console.Write("Elige una opción: ");
 
@@ -41,6 +42,9 @@ internal static class Program
                     break;
                 case "7":
                     EjecutarSiExiste(numeros, InvertirArray);
+                    break;
+                case "8":
+                    EjecutarSiExiste(numeros, MostrarMediana);
                     break;
                 case "0":
                     salir = true;
@@ -173,5 +177,18 @@ internal static class Program
         System.Array.Reverse(numeros);
         Console.WriteLine("Array invertido.");
         MostrarArray(numeros);
+    }
+
+    private static void MostrarMediana(int[] numeros)
+    {
+        // Se ordena una copia para no cambiar el array del usuario.
+        var ordenados = (int[])numeros.Clone();
+        System.Array.Sort(ordenados);
+        var mitad = ordenados.Length / 2;
+        var mediana = ordenados.Length % 2 == 0
+            ? (ordenados[mitad - 1] + ordenados[mitad]) / 2.0
+            : ordenados[mitad];
+
+        Console.WriteLine($"Mediana: {mediana:F2}");
     }
 }
