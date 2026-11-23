@@ -17,6 +17,8 @@ internal static class Program
             Console.WriteLine("6. Ordenar de menor a mayor");
             Console.WriteLine("7. Invertir el array");
             Console.WriteLine("8. Calcular la mediana");
+            Console.WriteLine("9. Calcular la desviación típica");
+            Console.WriteLine("10. Binarizar el array");
             Console.WriteLine("0. Salir");
             Console.Write("Elige una opción: ");
 
@@ -45,6 +47,12 @@ internal static class Program
                     break;
                 case "8":
                     EjecutarSiExiste(numeros, MostrarMediana);
+                    break;
+                case "9":
+                    EjecutarSiExiste(numeros, MostrarDesviacionTipica);
+                    break;
+                case "10":
+                    EjecutarSiExiste(numeros, Binarizar);
                     break;
                 case "0":
                     salir = true;
@@ -190,5 +198,27 @@ internal static class Program
             : ordenados[mitad];
 
         Console.WriteLine($"Mediana: {mediana:F2}");
+    }
+
+    private static void MostrarDesviacionTipica(int[] numeros)
+    {
+        // Desviación típica poblacional: se divide entre el número de elementos.
+        var media = numeros.Average();
+        var sumaCuadrados = numeros.Sum(numero => (numero - media) * (numero - media));
+        var desviacion = Math.Sqrt(sumaCuadrados / numeros.Length);
+
+        Console.WriteLine($"Desviación típica: {desviacion:F2}");
+    }
+
+    private static void Binarizar(int[] numeros)
+    {
+        var n = LeerEntero("Número n para binarizar: ");
+        var binario = new int[numeros.Length];
+        for (var i = 0; i < numeros.Length; i++)
+        {
+            binario[i] = numeros[i] < n ? 0 : 1;
+        }
+
+        Console.WriteLine($"Array binarizado con n = {n}: [{string.Join(", ", binario)}]");
     }
 }
