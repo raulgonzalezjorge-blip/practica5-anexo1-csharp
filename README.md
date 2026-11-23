@@ -5,18 +5,19 @@ que pide los datos por teclado y deja elegir la operación.
 
 | Proyecto    | Funcionalidades |
 |-------------|-----------------|
-| `Arrays`    | máximo, mínimo, mediana, media, ordenar, desviación típica, binarizar |
-| `Numeros`   | primo, factorial, segundos → h/min/s, serie de Pell (15), Armstrong, dígitos diferentes |
-| `Cadenas`   | palíndromo, mayúsculas/minúsculas, ocurrencias de una letra, repetir dos strings, duplicar letras, borrar apariciones |
+| `Array`     | máximo, mínimo, mediana, media, ordenar, desviación típica, binarizar |
+| `Numero`    | primo, factorial, segundos → h/min/s, serie de Pell (15), Armstrong, dígitos diferentes |
+| `String`    | palíndromo, mayúsculas/minúsculas, ocurrencias de una letra, repetir dos strings, duplicar letras, borrar apariciones |
 | `Decimales` | redondear al alza, quitar decimales, ecuación de segundo grado |
 
 ## Estructura esperada
 ```
-Anexo1.sln
-Arrays/       (proyecto de consola)
-Numeros/
-Cadenas/
-Decimales/
+UT5.sln
+AnexoI/
+  Array/        (proyecto de consola)
+  Numero/
+  String/
+  Decimales/
 ```
 
 ## Equipo
